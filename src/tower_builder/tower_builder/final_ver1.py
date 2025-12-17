@@ -18,7 +18,7 @@ from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge, CvBridgeError
 import message_filters
 import DR_init
-from dsr_example.simple.gripper_drl_controller import GripperController
+from tower_builder.gripper_drl_controller import GripperController
 from dataclasses import dataclass, field
 from typing import Optional, List, Tuple
 from collections import deque
