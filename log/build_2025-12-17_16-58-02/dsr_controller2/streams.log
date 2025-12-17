@@ -1,0 +1,95 @@
+[0.017s] Invoking command in '/home/user/Jina/build/dsr_controller2': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:/home/user/Jina/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/Jina/build/dsr_controller2 -- -j12 -l12
+[0.084s] [ 25%] [32mBuilding CXX object CMakeFiles/dsr_controller2.dir/src/dsr_controller2.cpp.o[0m
+[0.084s] [ 50%] [32mBuilding CXX object CMakeFiles/dsr_joint_trajectory.dir/src/dsr_joint_trajectory.cpp.o[0m
+[1.572s] In file included from [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/include/dsr_controller2/dsr_joint_trajectory.hpp:30[m[K,
+[1.572s]                  from [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_joint_trajectory.cpp:10[m[K:
+[1.572s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[1.572s]    22 |   "This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[1.572s]       |                                                                                                    [01;36m[K^[m[K
+[1.584s] In file included from [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/include/dsr_controller2/dsr_controller2.hpp:28[m[K,
+[1.584s]                  from [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:10[m[K:
+[1.584s] [01m[K/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:22:100:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header.[m[K’
+[1.584s]    22 |  "This header include is deprecated. Please update your code to use 'realtime_buffer.hpp' header."[01;36m[K)[m[K  //NOLINT
+[1.584s]       |                                                                                                   [01;36m[K^[m[K
+[1.584s] 
+[5.023s] [ 75%] [32m[1mLinking CXX shared library libdsr_joint_trajectory.so[0m
+[5.052s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn dsr_controller2::RobotController::on_init()[m[K’:
+[5.053s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:81:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krt_ms[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.053s]    81 |     auto [01;35m[Krt_ms[m[K        = auto_declare<int>(PARAM_RT_TIMER_MS, 10);
+[5.053s]       |          [01;35m[K^~~~~[m[K
+[5.074s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:[m[K In static member function ‘[01m[Kstatic bool dsr_controller2::RobotController::extract_field(LPRT_OUTPUT_DATA_LIST, const string&, std::vector<float>&)[m[K’:
+[5.074s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:169:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcopy_arr_d[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.074s]   169 |     auto [01;35m[Kcopy_arr_d[m[K = [&](const double* src, size_t n) {
+[5.074s]       |          [01;35m[K^~~~~~~~~~[m[K
+[5.074s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:175:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcopy_arr_i32[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.074s]   175 |     auto [01;35m[Kcopy_arr_i32[m[K = [&](const int32_t* src, size_t n) {
+[5.074s]       |          [01;35m[K^~~~~~~~~~~~[m[K
+[5.074s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:215:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kcopy_mat6x6_d[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.074s]   215 |     auto [01;35m[Kcopy_mat6x6_d[m[K = [&](const double m[6][6]) {
+[5.074s]       |          [01;35m[K^~~~~~~~~~~~~[m[K
+[5.191s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:[m[K In lambda function:
+[5.191s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:564:15:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kposb[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[5.191s]   564 |     MOVE_POSB [01;35m[Kposb[m[K[req->pos_cnt];
+[5.192s]       |               [01;35m[K^~~~[m[K
+[5.353s] [ 75%] Built target dsr_joint_trajectory
+[5.811s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn dsr_controller2::RobotController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[5.811s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:2426:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memset(void*, int, size_t)[m[K’ clearing an object of type ‘[01m[Kstruct DR_STATE[m[K’ with no trivial copy-assignment; use assignment or value-initialization instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+[5.811s]  2426 |   [01;35m[Kmemset(&g_stDrState, 0x00, sizeof(DR_STATE))[m[K;
+[5.811s]       |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.811s] In file included from [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/src/dsr_controller2.cpp:10[m[K:
+[5.811s] [01m[K/home/user/Jina/src/doosan-robot2/dsr_controller2/include/dsr_controller2/dsr_controller2.hpp:389:16:[m[K [01;36m[Knote: [m[K‘[01m[Kstruct DR_STATE[m[K’ declared here
+[5.811s]   389 | typedef struct [01;36m[K{[m[K
+[5.811s]       |                [01;36m[K^[m[K
+[61.321s] [100%] [32m[1mLinking CXX shared library libdsr_controller2.so[0m
+[69.292s] [100%] Built target dsr_controller2
+[69.303s] Invoked command in '/home/user/Jina/build/dsr_controller2' returned '0': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:/home/user/Jina/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/user/Jina/build/dsr_controller2 -- -j12 -l12
+[69.305s] Invoking command in '/home/user/Jina/build/dsr_controller2': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:/home/user/Jina/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/Jina/build/dsr_controller2
+[69.313s] -- Install configuration: ""
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/dsr_controller2_plugins.xml
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/dsr_joint_trajectory_plugin.xml
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/dsr_joint_trajectory.hpp
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/visibility_control.h
+[69.314s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/dsr_controller2.hpp
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/console.conf
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_gz.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_p3020.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_gz_p3020.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/default.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_ex.yaml
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_control2.launch.py
+[69.315s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_controller2.launch.py
+[69.316s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_moveit2.launch.py
+[69.316s] -- Installing: /home/user/Jina/install/dsr_controller2/lib/libdsr_controller2.so
+[69.367s] -- Set runtime path of "/home/user/Jina/install/dsr_controller2/lib/libdsr_controller2.so" to ""
+[69.369s] -- Installing: /home/user/Jina/install/dsr_controller2/lib/libdsr_joint_trajectory.so
+[69.377s] -- Set runtime path of "/home/user/Jina/install/dsr_controller2/lib/libdsr_joint_trajectory.so" to ""
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/library_path.sh
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/library_path.dsv
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/package_run_dependencies/dsr_controller2
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/parent_prefix_path/dsr_controller2
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/ament_prefix_path.sh
+[69.378s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/ament_prefix_path.dsv
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/path.sh
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/path.dsv
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.bash
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.sh
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.zsh
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.dsv
+[69.379s] -- Installing: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/package.dsv
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/packages/dsr_controller2
+[69.379s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/dsr_controller2
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_controller2Export.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_controller2Export-noconfig.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_joint_trajectoryExport.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_joint_trajectoryExport-noconfig.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/ament_cmake_export_targets-extras.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/dsr_controller2Config.cmake
+[69.380s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/dsr_controller2Config-version.cmake
+[69.381s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/package.xml
+[69.383s] Invoked command in '/home/user/Jina/build/dsr_controller2' returned '0': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:/home/user/Jina/install/dsr_controller2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/user/Jina/build/dsr_controller2
