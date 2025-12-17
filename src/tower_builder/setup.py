@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-        'stb = tower_builder.class_ver1:main'
+        'stb = tower_builder.main:main'
         ],
     },
 )
