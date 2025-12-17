@@ -17,3 +17,4 @@ tower_builder/camera.py
 tower_builder/controller.py
 tower_builder/gripper_drl_controller.py
 tower_builder/main.py
+tower_builder/main_mod.py
