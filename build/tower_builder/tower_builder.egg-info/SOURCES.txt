@@ -13,7 +13,9 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 tower_builder/__init__.py
-tower_builder/class_ver1.py
+tower_builder/camera.py
+tower_builder/controller.py
 tower_builder/final_ver1.py
 tower_builder/final_ver2.py
 tower_builder/gripper_drl_controller.py
+tower_builder/main.py
