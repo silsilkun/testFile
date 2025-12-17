@@ -13,9 +13,12 @@
 ### Tips
 
 - 전역 package와 venv를 따로 이용해야할 경우 "python -m venv venv --system-site-packages"를 사용하면 됩니다
+<<<<<<< HEAD
 
 - add 취소방법 "git restore --staged ."
 
-원격 브랜치 정보를 새로 받으면서 “없어진 브랜치” 정리
+- 원격 브랜치 정보를 새로 받으면서 “없어진 브랜치” 정리
 명령어 : git fetch --all --prune
 이걸 입력하고 다시 git branch -a 입력하면 대부분 해결됩니다.
+
+- add 취소방법 "git restore --staged ."
