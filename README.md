@@ -19,3 +19,5 @@
 이걸 입력하고 다시 git branch -a 입력하면 대부분 해결됩니다.
 
 - add 취소방법 "git restore --staged ."
+
+- 변경완료
