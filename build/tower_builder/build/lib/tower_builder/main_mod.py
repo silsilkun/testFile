@@ -167,21 +167,20 @@ class RobotControllerNode(Node):
             self.is_working = False
 
    # ============================================================
-    # [수정 완료] 타이밍 대폭 늘림 + 그리퍼 악력 강화
+    # [핵심 수정] 로봇 wait() 신뢰 불가 -> PC 강제 sleep() 사용
     # ============================================================
     def move_smart_pick_and_place(self, px, py, pz, width, sx, sy, sz):
-        from DSR_ROBOT2 import get_current_posx, movel, movej, wait
+        # wait 함수 지워버림 (신뢰도 바닥)
+        from DSR_ROBOT2 import get_current_posx, movel, movej
         from DR_common2 import posx, posj
+        import time # 파이썬 내장 시간 모듈 사용
 
-        # [수정 1] 그리퍼 값 튜닝 (꽉 잡게 값 올림)
+        # [수정 1] 그리퍼 값 튜닝 (꽉 잡게 값 유지)
         if width <= 35:
-            # 작은 블럭
-            target_open = 300; target_close = 600
+            target_open = 300; target_close = 900
         elif width <= 45:
-            # 중간 블럭 (아까 600이 헐거웠으므로 750으로 상향)
-            target_open = 200; target_close = 550
+            target_open = 200; target_close = 750
         else:
-            # 큰 블럭
             target_open = 0; target_close = 450
 
         # 현재 자세 회전값(Rx, Ry, Rz) 유지
@@ -190,55 +189,60 @@ class RobotControllerNode(Node):
         
         safe_z = 350.0
 
+        # 로봇 속도와 거리를 고려했을 때의 넉넉한 대기 시간 상수
+        MOVE_WAIT = 5.0  # 이동할 때 기다리는 시간 (5초)
+        SHORT_WAIT = 2.5 # 짧은 이동 (2.5초)
+        GRIP_WAIT = 2.0  # 잡을 때 (2초)
+
         # ----------------------------------------------------
         # [PICK] 잡으러 가기
         # ----------------------------------------------------
-        print("   🚀 [1] Pick 위치 상공으로 이동 중... (3초 대기)")
+        print("   🚀 [1] Pick 위치 상공으로 이동 중... (PC 강제 대기)")
         p_pick_ready = posx([px, py, safe_z, rx, ry, rz])
         movel(p_pick_ready, vel=VELOCITY, acc=ACC)
-        wait(3.0) # [중요] 로봇이 도착할 때까지 충분히 기다림
+        time.sleep(MOVE_WAIT) # <--- [핵심] 로봇이 뭐라든 무조건 5초 멈춤
         
         # 2. 그리퍼 벌리기
         if self.gripper: self.gripper.move(target_open)
-        wait(1.0) # 벌리는 시간 확보
+        time.sleep(1.0)
         
         # 3. 내려가기
-        print("   🔻 [2] 하강하여 잡기... (2초 대기)")
+        print("   🔻 [2] 하강하여 잡기...")
         p_pick_down = posx([px, py, pz, rx, ry, rz])
         movel(p_pick_down, vel=VELOCITY/2, acc=ACC/2)
-        wait(2.0) # 내려가는 시간 확보
+        time.sleep(SHORT_WAIT) # 내려가는 시간 강제 대기
         
         # 4. 잡기
         if self.gripper: self.gripper.move(target_close)
-        print("   ✊ [3] 그립! (2초간 꽉 잡기)")
-        wait(2.0) # [중요] 잡는 시간 충분히 줌 (아까 여기서 놓침)
+        print("   ✊ [3] 그립! (꽉 잡을 때까지 대기)")
+        time.sleep(GRIP_WAIT)
 
         # 5. 올라오기
-        print("   🔼 [4] 들어 올리기... (2초 대기)")
+        print("   🔼 [4] 들어 올리기...")
         movel(p_pick_ready, vel=VELOCITY, acc=ACC)
-        wait(2.0)
+        time.sleep(SHORT_WAIT)
 
         # ----------------------------------------------------
         # [PLACE] 쌓으러 가기
         # ----------------------------------------------------
-        print("   🚀 [5] Place 위치로 이동... (4초 대기)")
+        print("   🚀 [5] Place 위치로 이동...")
         p_place_ready = posx([sx, sy, safe_z, rx, ry, rz])
         movel(p_place_ready, vel=VELOCITY, acc=ACC)
-        wait(4.0) # [중요] 이동 거리가 머니까 더 기다림
+        time.sleep(MOVE_WAIT) # 이동 거리 머니까 5초 대기
         
-        print("   🔻 [6] 하강하여 놓기... (2초 대기)")
+        print("   🔻 [6] 하강하여 놓기...")
         p_place_down = posx([sx, sy, sz + 15.0, rx, ry, rz])
         movel(p_place_down, vel=VELOCITY/2, acc=ACC/2)
-        wait(2.0)
+        time.sleep(SHORT_WAIT)
 
         if self.gripper: self.gripper.move(0) 
-        print("   🖐 [7] 놓기 완료 (1초 대기)")
-        wait(1.0) # 놓는 시간 확보
+        print("   🖐 [7] 놓기 완료")
+        time.sleep(1.0)
 
         # 복귀
         print("   🔼 [8] 복귀 중...")
         movel(p_place_ready, vel=VELOCITY, acc=ACC)
-        wait(2.0)
+        time.sleep(SHORT_WAIT)
 
     def process_and_render(self):
         self.vision.config.threshold = cv2.getTrackbarPos("Threshold", "Control")

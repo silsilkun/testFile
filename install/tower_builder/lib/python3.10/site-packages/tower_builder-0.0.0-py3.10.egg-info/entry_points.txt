@@ -1,3 +1,3 @@
 [console_scripts]
-stb = tower_builder.main_mod:main
+stb = tower_builder.main_mod2:main
 
