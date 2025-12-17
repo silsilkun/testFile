@@ -13,3 +13,4 @@
 ### Tips
 
 - 전역 package와 venv를 따로 이용해야할 경우 "python -m venv venv --system-site-packages"를 사용하면 됩니다
+- add 취소방법 "git restore --staged ."
