@@ -27,7 +27,7 @@ from tower_builder.camera import BlockDetectionSystem
 # ============================================================
 ROBOT_ID = "dsr01"
 ROBOT_MODEL = "e0509"
-VELOCITY, ACC = 150, 150
+VELOCITY, ACC = 200, 200
 
 DR_init.__dsr__id = ROBOT_ID
 DR_init.__dsr__model = ROBOT_MODEL
@@ -122,7 +122,7 @@ class RobotControllerNode(Node):
 
         stack_x, stack_y, stack_base_z = self.stack_base_coords
         current_stack_height = 0.0
-        Rz_target = 90 # Pick / Place 공통 고정
+        # Rz_target = 90 # Pick / Place 공통 고정
 
         # [NEW] 이번 작업 기록 초기화
         self.stack_history = []
@@ -134,20 +134,21 @@ class RobotControllerNode(Node):
             wait(3)
 
             for i, block in enumerate(self.selected_queue):
+                Rz_target = block.angle
                 measured_w = min(block.real_width_mm, block.real_height_mm)
                 if measured_w >= 45.0:
                     real_block_height = 50.5
-                    val_close = 540
+                    val_close = 500
                     val_pregrip = 260  # 대형
                     val_open = 260
                 elif measured_w >= 30.0:
                     real_block_height = 40.7
-                    val_close = 610
+                    val_close = 550
                     val_pregrip = 330  # 중형
                     val_open = 330
                 else:
                     real_block_height = 30.5
-                    val_close = 650
+                    val_close = 600
                     val_pregrip = 470  # 소형 (요청 예시)
                     val_open = 470
 
@@ -191,11 +192,11 @@ class RobotControllerNode(Node):
                 wait(2)
 
                 # ================= [PLACE 동작] =================
-                p_place_high = posx([stack_x, stack_y, SAFE_Z, 90, 180, Rz_target])
+                p_place_high = posx([stack_x, stack_y, SAFE_Z, 90, 180, 90])
                 movel(p_place_high, vel=VELOCITY, acc=ACC)
                 wait(2)
 
-                p_place = posx([stack_x, stack_y, place_z, 90, 180, Rz_target])
+                p_place = posx([stack_x, stack_y, place_z, 90, 180, 90])
                 movel(p_place, vel=VELOCITY/2, acc=ACC/2)
                 wait(2)
 
@@ -259,15 +260,15 @@ class RobotControllerNode(Node):
                 Rz_target = rec["Rz"]
 
                 # ================= [UNSTACK PICK: 탑에서 집기] =================
-                p_place_high = posx([place_x, place_y, SAFE_Z, 90, 180, Rz_target])
+                p_place_high = posx([place_x, place_y, SAFE_Z, 90, 180, 90])
                 movel(p_place_high, vel=VELOCITY, acc=ACC)
                 wait(2)
 
                 # 사이즈 맞춘 벌림 값으로 세팅 후 하강
                 self.gripper.move(val_open)
-                wait(2)
+                wait(4)
 
-                p_from_stack = posx([place_x, place_y, place_z + 1.0, 90, 180, Rz_target])
+                p_from_stack = posx([place_x, place_y, place_z + 1.0, 90, 180, 90])
                 movel(p_from_stack, vel=VELOCITY/2, acc=ACC/2)
                 wait(2)
 
@@ -278,12 +279,12 @@ class RobotControllerNode(Node):
                 wait(2)
 
                 # ================= [UNSTACK PLACE: 원래 자리로 복귀] =================
-                p_pick_high = posx([pick_x, pick_y, SAFE_Z, 90, 180, Rz_target])
+                p_pick_high = posx([pick_x, pick_y, SAFE_Z, 90, 180, 90])
                 movel(p_pick_high, vel=VELOCITY, acc=ACC)
                 wait(2)
 
                 # (1) 원래 자리로 내려감
-                p_back = posx([pick_x, pick_y, pick_z + 1.0, 90, 180, Rz_target])
+                p_back = posx([pick_x, pick_y, pick_z + 1.0, 90, 180, 90])
                 movel(p_back, vel=VELOCITY/2, acc=ACC/2)
                 wait(2)
 
