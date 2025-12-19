@@ -1,0 +1,37 @@
+[1.137s] Invoking command in '/home/user/Jina/src/tower_builder': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
+[1.413s] running egg_info
+[1.414s] writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+[1.414s] writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+[1.414s] writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+[1.414s] writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+[1.414s] writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+[1.416s] reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.417s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.417s] running build
+[1.417s] running build_py
+[1.417s] copying tower_builder/main_mod_hub.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.417s] copying tower_builder/gripper_drl_controller.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.418s] running install
+[1.418s] running install_lib
+[1.419s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/main_mod_hub.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.419s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/gripper_drl_controller.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.420s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main_mod_hub.py to main_mod_hub.cpython-310.pyc
+[1.422s]   File "/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main_mod_hub.py", line 187
+[1.422s]     --- 접근 방향 및 Rz 계산 ---
+[1.422s]                ^^^^^^
+[1.422s] SyntaxError: invalid syntax
+[1.422s] 
+[1.422s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/gripper_drl_controller.py to gripper_drl_controller.cpython-310.pyc
+[1.423s] running install_data
+[1.423s] running install_egg_info
+[1.425s] removing '/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info' (and everything under it)
+[1.425s] Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+[1.426s] running install_scripts
+[1.447s] Installing cam script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.447s] Installing hub script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.447s] Installing pyo script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.447s] Installing rob script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.447s] Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.447s] Installing try script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.448s] writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'
+[1.474s] Invoked command in '/home/user/Jina/src/tower_builder' returned '0': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main.py", line 23
+    from tower_builder.camera(ori) import BlockDetectionSystem
+                             ^
+SyntaxError: invalid syntax
+

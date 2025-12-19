@@ -1,0 +1,24 @@
+[0.810s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_bringup2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_bringup2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/user/Jina/build/dsr_bringup2/build install --record /home/user/Jina/build/dsr_bringup2/install.log --single-version-externally-managed install_data
+[1.085s] running egg_info
+[1.085s] writing ../../../build/dsr_bringup2/dsr_bringup2.egg-info/PKG-INFO
+[1.086s] writing dependency_links to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/dependency_links.txt
+[1.086s] writing entry points to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/entry_points.txt
+[1.086s] writing requirements to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/requires.txt
+[1.087s] writing top-level names to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/top_level.txt
+[1.090s] reading manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[1.091s] writing manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[1.092s] running build
+[1.092s] running build_py
+[1.092s] running install
+[1.093s] running install_lib
+[1.095s] running install_data
+[1.095s] running install_egg_info
+[1.098s] removing '/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info' (and everything under it)
+[1.098s] Copying ../../../build/dsr_bringup2/dsr_bringup2.egg-info to /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info
+[1.099s] running install_scripts
+[1.129s] Installing gazebo_connection script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[1.129s] Installing moveit_connection script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[1.129s] Installing mujoco_bridge script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[1.129s] Installing run_emulator script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[1.130s] writing list of installed files to '/home/user/Jina/build/dsr_bringup2/install.log'
+[1.234s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_bringup2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_bringup2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/user/Jina/build/dsr_bringup2/build install --record /home/user/Jina/build/dsr_bringup2/install.log --single-version-externally-managed install_data

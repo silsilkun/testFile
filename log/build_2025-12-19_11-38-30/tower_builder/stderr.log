@@ -1,0 +1,5 @@
+  File "/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main_mod_hub.py", line 278
+    finally:
+    ^^^^^^^
+SyntaxError: invalid syntax
+

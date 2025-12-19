@@ -1,0 +1,50 @@
+[1.235s] Invoking command in '/home/user/Jina/src/tower_builder': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
+[1.417s] running egg_info
+[1.418s] writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+[1.418s] writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+[1.418s] writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+[1.418s] writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+[1.418s] writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+[1.420s] reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.420s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.420s] running build
+[1.420s] running build_py
+[1.420s] copying tower_builder/camera_node.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/main.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/robot_node.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/main_mod_hub.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/gripper_drl_controller.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/camera.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] copying tower_builder/camera(ori).py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.421s] running install
+[1.422s] running install_lib
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/camera_node.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/main.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/robot_node.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/main_mod_hub.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/gripper_drl_controller.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/camera.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.423s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/camera(ori).py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.424s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/camera_node.py to camera_node.cpython-310.pyc
+[1.425s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main.py to main.cpython-310.pyc
+[1.425s]   File "/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main.py", line 23
+[1.425s]     from tower_builder.camera(ori) import BlockDetectionSystem
+[1.425s]                              ^
+[1.425s] SyntaxError: invalid syntax
+[1.425s] 
+[1.425s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/robot_node.py to robot_node.cpython-310.pyc
+[1.426s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main_mod_hub.py to main_mod_hub.cpython-310.pyc
+[1.427s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/gripper_drl_controller.py to gripper_drl_controller.cpython-310.pyc
+[1.427s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/camera.py to camera.cpython-310.pyc
+[1.429s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/camera(ori).py to camera(ori).cpython-310.pyc
+[1.432s] running install_data
+[1.432s] running install_egg_info
+[1.433s] removing '/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info' (and everything under it)
+[1.433s] Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+[1.434s] running install_scripts
+[1.451s] Installing cam script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.451s] Installing hub script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.451s] Installing rob script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.451s] Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.451s] writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'
+[1.479s] Invoked command in '/home/user/Jina/src/tower_builder' returned '0': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data

@@ -1,0 +1,25 @@
+[2.454s] Invoking command in '/home/user/Jina/src/tower_builder': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
+[3.206s] running egg_info
+[3.218s] writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+[3.218s] writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+[3.218s] writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+[3.219s] writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+[3.219s] writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+[3.227s] reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[3.235s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[3.235s] running build
+[3.235s] running build_py
+[3.238s] copying tower_builder/main_mod_hub.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[3.238s] running install
+[3.239s] running install_lib
+[3.239s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/main_mod_hub.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[3.242s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main_mod_hub.py to main_mod_hub.cpython-310.pyc
+[3.251s] running install_data
+[3.251s] running install_egg_info
+[3.262s] removing '/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info' (and everything under it)
+[3.263s] Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+[3.271s] running install_scripts
+[3.310s] Installing hub script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[3.310s] Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[3.310s] writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'
+[3.507s] Invoked command in '/home/user/Jina/src/tower_builder' returned '0': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data

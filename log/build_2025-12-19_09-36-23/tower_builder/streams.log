@@ -1,0 +1,41 @@
+[1.111s] Invoking command in '/home/user/Jina/src/tower_builder': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
+[1.309s] running egg_info
+[1.310s] writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+[1.310s] writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+[1.310s] writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+[1.310s] writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+[1.310s] writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+[1.315s] reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.316s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[1.316s] running build
+[1.316s] running build_py
+[1.317s] copying tower_builder/main.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.317s] copying tower_builder/gripper_drl_controller.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.317s] copying tower_builder/gripper_drl_controller(nodever).py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.317s] copying tower_builder/camera.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.318s] copying tower_builder/camera(nodever).py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[1.318s] running install
+[1.318s] running install_lib
+[1.319s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/main.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.319s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/gripper_drl_controller.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.320s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/gripper_drl_controller(nodever).py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.320s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/camera.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.320s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/camera(nodever).py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[1.321s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/main.py to main.cpython-310.pyc
+[1.324s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/gripper_drl_controller.py to gripper_drl_controller.cpython-310.pyc
+[1.325s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/gripper_drl_controller(nodever).py to gripper_drl_controller(nodever).cpython-310.pyc
+[1.326s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/camera.py to camera.cpython-310.pyc
+[1.330s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/camera(nodever).py to camera(nodever).cpython-310.pyc
+[1.332s] running install_data
+[1.332s] running install_egg_info
+[1.333s] removing '/home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info' (and everything under it)
+[1.333s] Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+[1.334s] running install_scripts
+[1.348s] Installing cam script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] Installing hub script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] Installing pyo script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] Installing rob script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] Installing try script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.349s] writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'
+[1.372s] Invoked command in '/home/user/Jina/src/tower_builder' returned '0': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
